@@ -1,7 +1,8 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '@/styles/Home.module.css'
-
+import {Carousel, Navbar} from 'flowbite-react'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -12,7 +13,55 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="">     
+      <main>  
+        
+        <div className="h-screen w-full">
+          <Carousel slide={false} className=" ">
+            <img src="/images/edmonton-fall-cropped.jpg" />
+            <img src="/images/sydney-eyes.jpg"  />
+            <img src="/images/fall-path-cropped.jpg"  />
+            <img src="/images/vancouver-night-cropped.jpg" />
+            <img src="/images/orange-sunset-cropped.jpg" />
+            <img src="/images/vancouver-flower-cropped.jpg" />
+          </Carousel>
+        </div>
+
+        <Navbar fluid={true} className="w-full rounded-none absolute bg-opacity-0 top-0 font-anton">
+          <Navbar.Brand >
+            <img  src="https://flowbite.com/docs/images/logo.svg" className="mr-3 h-6 sm:h-9" alt="Flowbite Logo"/>
+            <span className="self-center whitespace-nowrap text-xl text-white"> Henry Marken </span>
+          </Navbar.Brand>
+          <Navbar.Toggle />
+          <Navbar.Collapse>
+            <Navbar.Link href="/" className="text-2xl text-white underline"> Home </Navbar.Link>
+            <Navbar.Link href="/gallery" className="text-2xl text-white"> Gallery </Navbar.Link>
+            <Navbar.Link href="/photoshoots" className="text-2xl text-white"> Photoshoots </Navbar.Link>
+            <Navbar.Link href="/about" className="text-2xl text-white"> About </Navbar.Link>
+            <Navbar.Link href="/contact" className="text-2xl text-white"> Contact </Navbar.Link>
+          </Navbar.Collapse>
+        </Navbar>
+
+<div>
+        <div className="h-screen w-full rounded-none bg-gallery bg-center">
+            <Link href="/gallery" className="text-center h-screen text-6xl grid place-content-center float-left ml-20 font-bold tracking-widest">GALLERY</Link>
+        </div>
+        <div className="h-screen w-full rounded-none bg-photoshoots bg-center">
+            <Link href="/photoshoots" className="text-center h-screen text-6xl grid place-content-center float-right mr-20 font-bold tracking-widest">PHOTOSHOOTS</Link>
+        </div>
+        <div className="h-screen w-full rounded-none bg-about bg-center">
+            <Link href="/about" className="text-center h-screen text-6xl grid place-content-center float-left ml-20 font-bold tracking-widest">ABOUT</Link>
+        </div>
+        <div className="h-screen w-full rounded-none bg-contact bg-center">
+            <Link href="/contact" className="text-center h-screen text-6xl grid place-content-center float-right mr-20 font-bold tracking-widest">CONTACT</Link>
+        </div>
+</div>
+    
+
+        
+
+
+
+
       </main>
     </>
   )
