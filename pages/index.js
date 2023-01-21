@@ -4,6 +4,9 @@ import styles from '@/styles/Home.module.css'
 import {Carousel, Navbar} from 'flowbite-react'
 import Link from 'next/link'
 
+ 
+
+
 export default function Home() {
   return (
     <>
@@ -26,33 +29,33 @@ export default function Home() {
           </Carousel>
         </div>
 
-        <Navbar fluid={true} className="w-full rounded-none absolute bg-opacity-0 top-0 font-anton">
-          <Navbar.Brand >
+        <Navbar fluid={true} className="w-full rounded-none absolute bg-opacity-0 top-0 mt-5 ">
+          <Navbar.Brand>
             <img  src="https://flowbite.com/docs/images/logo.svg" className="mr-3 h-6 sm:h-9" alt="Flowbite Logo"/>
             <span className="self-center whitespace-nowrap text-xl text-white"> Henry Marken </span>
           </Navbar.Brand>
           <Navbar.Toggle />
-          <Navbar.Collapse>
-            <Navbar.Link href="/" className="text-2xl text-white underline"> Home </Navbar.Link>
-            <Navbar.Link href="/gallery" className="text-2xl text-white"> Gallery </Navbar.Link>
-            <Navbar.Link href="/photoshoots" className="text-2xl text-white"> Photoshoots </Navbar.Link>
-            <Navbar.Link href="/about" className="text-2xl text-white"> About </Navbar.Link>
-            <Navbar.Link href="/contact" className="text-2xl text-white"> Contact </Navbar.Link>
+          <Navbar.Collapse >
+            <Link href="/" className="md:text-2xl text-white underline font-extralight font-roboto"> Home </Link>
+            <Link href="/gallery" className="md:text-2xl text-white font-extralight font-roboto transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-150"> Gallery </Link>
+            <Link href="/photoshoots" className="md:text-2xl text-white font-extralight font-roboto transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-150"> Photoshoots </Link>
+            <Link href="/about" className="md:text-2xl text-white font-extralight font-roboto transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-150"> About </Link>
+            <Link href="/contact" className="md:text-2xl text-white font-extralight font-roboto transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-150"> Contact </Link>
           </Navbar.Collapse>
         </Navbar>
 
 <div>
         <div className="h-screen w-full rounded-none bg-gallery bg-center">
-            <Link href="/gallery" className="text-center h-screen text-6xl grid place-content-center float-left ml-20 font-bold tracking-widest">GALLERY</Link>
+            <Link href="/gallery" className="text-center h-screen text-6xl grid place-content-center float-left ml-20 font-bold tracking-widest transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-150">GALLERY</Link>
         </div>
         <div className="h-screen w-full rounded-none bg-photoshoots bg-center">
-            <Link href="/photoshoots" className="text-center h-screen text-6xl grid place-content-center float-right mr-20 font-bold tracking-widest">PHOTOSHOOTS</Link>
+            <Link href="/photoshoots" className="text-center h-screen text-6xl grid place-content-center float-right mr-20 font-bold tracking-widest transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-150">PHOTOSHOOTS</Link>
         </div>
         <div className="h-screen w-full rounded-none bg-about bg-center">
-            <Link href="/about" className="text-center h-screen text-6xl grid place-content-center float-left ml-20 font-bold tracking-widest">ABOUT</Link>
+            <Link href="/about" className="text-center h-screen text-6xl grid place-content-center float-left ml-20 font-bold tracking-widest transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-150">ABOUT</Link>
         </div>
         <div className="h-screen w-full rounded-none bg-contact bg-center">
-            <Link href="/contact" className="text-center h-screen text-6xl grid place-content-center float-right mr-20 font-bold tracking-widest">CONTACT</Link>
+            <Link href="/contact" className="text-center h-screen text-6xl grid place-content-center float-right mr-20 font-bold tracking-widest transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-150">CONTACT</Link>
         </div>
 </div>
     

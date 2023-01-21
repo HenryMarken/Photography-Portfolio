@@ -10,8 +10,9 @@ module.exports = {
     extend: {
       fontFamily: {
         'poppins' : ['Poppins', 'sans-serif'],
-        'merriweather' : ['Merriweather', 'sans-serif'],
+        'merriweather' : ['Merriweather', 'serif'],
         'anton' : ['Anton', 'sans-serif'],
+        'roboto' : ['Roboto', 'sans-serif'],
       },
     },
     backgroundImage: {
