@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 function Gallery () {
     return (
-        <main className="">
+        <main>
             <div className="h-1/2 w-full relative">
                 <img src="/images/water-reflection.jpg" className="object-fill h-full w-full"/>
                 <div className="absolute  top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
