@@ -32,9 +32,9 @@ function About () {
               </div>
               
               <div className="basis-1/2 flex-1 lg:mt-32 mt-10  text-md py-2 md:px-0 leading-8 text-center max-w-lg mx-auto px-10">
-                <h1 className="md:text-4xl text-2xl font-bold mb-10">Hey, I'm Henry</h1>
-                <p className="md:text-2xl text-xl my-10">I'm a recent electrical engineering graduate that does photography as a side hobby. I started with photography as it helped me to see the world in a different view. For me it was a way to live in the moment. I find myself always stressing and trying to rush my life into what I think is the best life for me not realizing to find happiness in the process and not the goal. With photograhy it allows me to take a step back and do just so.</p>
-                <p className="md:text-2xl text-xl my-10">Whenever the opportunity is presented to improve my skills in photography I don't shy away. I hope to do as many photoshoots as I can while meeting wonderful people along the way. One day I want to start my own photography business and hopefully strive as a travelling photographer.</p>   
+                <h1 className="md:text-4xl text-2xl font-bold mb-10">Hey, I&apos;m Henry</h1>
+                <p className="md:text-2xl text-xl my-10">I&apos;m a recent electrical engineering graduate that does photography as a side hobby. I started with photography as it helped me to see the world in a different view. For me it was a way to live in the moment. I find myself always stressing and trying to rush my life into what I think is the best life for me not realizing to find happiness in the process and not the goal. With photograhy it allows me to take a step back and do just so.</p>
+                <p className="md:text-2xl text-xl my-10">Whenever the opportunity is presented to improve my skills in photography I don&apos;t shy away. I hope to do as many photoshoots as I can while meeting wonderful people along the way. One day I want to start my own photography business and hopefully strive as a travelling photographer.</p>   
               </div>
 
             </div>
