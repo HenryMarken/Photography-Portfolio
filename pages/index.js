@@ -19,43 +19,43 @@ export default function Home() {
       <main>  
         
         <div className="h-screen w-full">
-          <Carousel slide={false} className=" ">
-            <img src="/images/edmonton-fall-cropped.jpg" />
-            <img src="/images/sydney-eyes.jpg"  />
-            <img src="/images/fall-path-cropped.jpg"  />
-            <img src="/images/vancouver-night-cropped.jpg" />
-            <img src="/images/orange-sunset-cropped.jpg" />
-            <img src="/images/vancouver-flower-cropped.jpg" />
+          <Carousel slide={false}>
+            <img src="/images/edmonton-fall-cropped.jpg" className="h-screen object-cover"/>
+            <img src="/images/sydney-eyes.jpg" className="h-screen object-cover"/>
+            <img src="/images/fall-path-cropped.jpg" className="h-screen object-cover"  />
+            <img src="/images/vancouver-night-cropped.jpg" className="h-screen object-cover" />
+            <img src="/images/orange-sunset-cropped.jpg" className="h-screen object-cover" />
+            <img src="/images/vancouver-flower-cropped.jpg" className="h-screen object-cover" />
           </Carousel>
         </div>
 
         <Navbar fluid={true} className="w-full rounded-none absolute bg-opacity-0 top-0 mt-5 ">
           <Navbar.Brand>
-            <img  src="https://flowbite.com/docs/images/logo.svg" className="mr-3 h-6 sm:h-9" alt="Flowbite Logo"/>
-            <span className="self-center whitespace-nowrap text-xl text-white"> Henry Marken </span>
+            <img  src="logo.png" className="mr-3 h-6 sm:h-9" alt="HM Logo"/>
+            <span className="self-center whitespace-nowrap text-xl text-white font-roboto"> Henry Marken </span>
           </Navbar.Brand>
           <Navbar.Toggle />
           <Navbar.Collapse >
             <Link href="/" className="md:text-2xl text-white underline font-extralight font-roboto"> Home </Link>
-            <Link href="/gallery" className="md:text-2xl text-white font-extralight font-roboto transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-150"> Gallery </Link>
-            <Link href="/photoshoots" className="md:text-2xl text-white font-extralight font-roboto transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-150"> Photoshoots </Link>
-            <Link href="/about" className="md:text-2xl text-white font-extralight font-roboto transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-150"> About </Link>
-            <Link href="/contact" className="md:text-2xl text-white font-extralight font-roboto transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-150"> Contact </Link>
+            <Link href="/gallery" className="md:text-2xl text-white font-extralight font-roboto transition ease-in-out delay-150  hover:-translate-y-1 md:hover:scale-110 duration-150"> Gallery </Link>
+            <Link href="/photoshoots" className="md:text-2xl text-white font-extralight font-roboto transition ease-in-out delay-150  hover:-translate-y-1 md:hover:scale-110 duration-150"> Photoshoots </Link>
+            <Link href="/about" className="md:text-2xl text-white font-extralight font-roboto transition ease-in-out delay-150  hover:-translate-y-1 md:hover:scale-110 duration-150"> About </Link>
+            <Link href="/contact" className="md:text-2xl text-white font-extralight font-roboto transition ease-in-out delay-150  hover:-translate-y-1 md:hover:scale-110 duration-150"> Contact </Link>
           </Navbar.Collapse>
         </Navbar>
 
 <div>
         <div className="h-screen w-full rounded-none bg-gallery bg-center">
-            <Link href="/gallery" className="text-center h-screen text-6xl grid place-content-center float-left ml-20 font-bold tracking-widest transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-150">GALLERY</Link>
+            <Link href="/gallery" className="text-center h-screen md:text-6xl text-4xl grid place-content-center md:float-left md:ml-20 md:font-semibold tracking-widest transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-150">GALLERY</Link>
         </div>
         <div className="h-screen w-full rounded-none bg-photoshoots bg-center">
-            <Link href="/photoshoots" className="text-center h-screen text-6xl grid place-content-center float-right mr-20 font-bold tracking-widest transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-150">PHOTOSHOOTS</Link>
+            <Link href="/photoshoots" className="text-center h-screen md:text-6xl text-4xl grid place-content-center md:float-right md:mr-20 md:font-semibold tracking-widest transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-150">PHOTOSHOOTS</Link>
         </div>
         <div className="h-screen w-full rounded-none bg-about bg-center">
-            <Link href="/about" className="text-center h-screen text-6xl grid place-content-center float-left ml-20 font-bold tracking-widest transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-150">ABOUT</Link>
+            <Link href="/about" className="text-center h-screen md:text-6xl text-4xl grid place-content-center md:float-left md:ml-20 md:font-semibold tracking-widest transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-150">ABOUT</Link>
         </div>
         <div className="h-screen w-full rounded-none bg-contact bg-center">
-            <Link href="/contact" className="text-center h-screen text-6xl grid place-content-center float-right mr-20 font-bold tracking-widest transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-150">CONTACT</Link>
+            <Link href="/contact" className="text-center h-screen md:text-6xl text-4xl grid place-content-center md:float-right md:mr-20 md:font-semibold tracking-widest transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-150">CONTACT</Link>
         </div>
 </div>
     
