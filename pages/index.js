@@ -44,20 +44,20 @@ export default function Home() {
           </Navbar.Collapse>
         </Navbar>
 
-<div>
-        <div className="h-screen w-full rounded-none bg-gallery bg-center">
-            <Link href="/gallery" className="text-center h-screen md:text-6xl text-4xl grid place-content-center md:float-left md:ml-20 md:font-semibold tracking-widest transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-150">GALLERY</Link>
+        <div className="text-white">
+          <div className="h-screen w-full rounded-none bg-gallery bg-center">
+              <Link href="/gallery" className="text-center h-screen md:text-6xl text-4xl grid place-content-center md:float-left md:ml-20 md:font-semibold tracking-widest transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-150">GALLERY</Link>
+          </div>
+          <div className="h-screen w-full rounded-none bg-photoshoots bg-center">
+              <Link href="/photoshoots" className="text-center h-screen md:text-6xl text-4xl grid place-content-center md:float-right md:mr-20 md:font-semibold tracking-widest transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-150">PHOTOSHOOTS</Link>
+          </div>
+          <div className="h-screen w-full rounded-none bg-about bg-center">
+              <Link href="/about" className="text-center h-screen md:text-6xl text-4xl grid place-content-center md:float-left md:ml-20 md:font-semibold tracking-widest transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-150">ABOUT</Link>
+          </div>
+          <div className="h-screen w-full rounded-none bg-contact bg-center">
+              <Link href="/contact" className="text-center h-screen md:text-6xl text-4xl grid place-content-center md:float-right md:mr-20 md:font-semibold tracking-widest transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-150">CONTACT</Link>
+          </div>
         </div>
-        <div className="h-screen w-full rounded-none bg-photoshoots bg-center">
-            <Link href="/photoshoots" className="text-center h-screen md:text-6xl text-4xl grid place-content-center md:float-right md:mr-20 md:font-semibold tracking-widest transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-150">PHOTOSHOOTS</Link>
-        </div>
-        <div className="h-screen w-full rounded-none bg-about bg-center">
-            <Link href="/about" className="text-center h-screen md:text-6xl text-4xl grid place-content-center md:float-left md:ml-20 md:font-semibold tracking-widest transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-150">ABOUT</Link>
-        </div>
-        <div className="h-screen w-full rounded-none bg-contact bg-center">
-            <Link href="/contact" className="text-center h-screen md:text-6xl text-4xl grid place-content-center md:float-right md:mr-20 md:font-semibold tracking-widest transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-150">CONTACT</Link>
-        </div>
-</div>
     
 
         

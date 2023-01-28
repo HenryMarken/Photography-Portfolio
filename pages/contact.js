@@ -14,11 +14,11 @@ function Contact () {
         }, 100);
       };
     return (
-        <main>
+        <main className="bg-black">
             <div className="h-fit w-full relative">
                 <img src="/images/contact-page-cropped.jpg"/>
                 <div className="absolute  top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                    <h1 className="md:text-6xl text-4xl md:tracking-widest tracking-wide mt-10 md:m-0">CONTACT</h1>
+                    <h1 className="md:text-6xl text-4xl md:tracking-widest tracking-wide mt-10 md:m-0 text-white">CONTACT</h1>
                 </div>
                 <Navbar fluid={true} className="w-full rounded-none absolute bg-opacity-0 top-0 mt-5">
                 <Navbar.Brand >
@@ -38,7 +38,7 @@ function Contact () {
 
 
 
-            <div className="text-center shadow-2xl p-10 rounded-xl my-10 mx-auto lg:max-w-screen-lg dark:text-white grow">
+            <div className="text-center shadow-2xl p-10 rounded-xl  mx-auto lg:max-w-screen-lg text-white grow">
               <h2 className="text-3xl font-bold mb-5">Contact Me</h2>
               <p className="mb-5">Feel free to leave me a message about anything!</p>
               <form onSubmit={handleSubmit} name="contact-form">

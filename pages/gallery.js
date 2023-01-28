@@ -3,16 +3,16 @@ import Link from 'next/link'
 
 function Gallery () {
     return (
-        <main>
+        <main className="bg-black">
             <div className="h-1/2 w-full relative">
                 <img src="/images/water-reflection-cropped.jpg" className="object-fill h-full w-full"/>
                 <div className="absolute  top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                    <h1 className="md:text-6xl text-4xl md:tracking-widest tracking-wide mt-10">GALLERY</h1>
+                    <h1 className="md:text-6xl text-4xl md:tracking-widest tracking-wide mt-10 text-white">GALLERY</h1>
                 </div>
                 <Navbar fluid={true} className="w-full rounded-none absolute bg-opacity-0 top-0 mt-5">
                 <Navbar.Brand >
                     <img  src="logo.png" className="mr-3 h-6 sm:h-9" alt="HM Logo"/>
-                    <span className="self-center whitespace-nowrap md:text-xl text-whit font-roboto"> Henry Marken </span>
+                    <span className="self-center whitespace-nowrap md:text-xl text-whit font-roboto text-white"> Henry Marken </span>
                 </Navbar.Brand>
                 <Navbar.Toggle />
                 <Navbar.Collapse>

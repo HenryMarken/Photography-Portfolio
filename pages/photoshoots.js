@@ -3,11 +3,11 @@ import Link from 'next/link'
 
 function Photoshoots () {
     return (
-        <main>
+        <main className='bg-black h-full'>
             <div className="h-1/2 w-full relative">
                 <img src="/images/photoshoots-page-cropped.jpg" className="object-fill h-full w-full"/>
                 <div className="absolute  top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                    <h1 className="md:text-6xl text-4xl md:tracking-widest tracking-wide mt-10 md:m-0">PHOTOSHOOTS</h1>
+                    <h1 className="md:text-6xl text-4xl md:tracking-widest tracking-wide mt-10 md:m-0 text-white">PHOTOSHOOTS</h1>
                 </div>
                 <Navbar fluid={true} className="w-full rounded-none absolute bg-opacity-0 top-0 mt-5">
                 <Navbar.Brand >
@@ -26,7 +26,7 @@ function Photoshoots () {
             </div>
 
 
-            <div className="h-96 md:w-1/2 w-5/6 mx-auto mt-10">
+            <div className="h-96 md:w-1/2 w-5/6 mx-auto mt-10 text-white">
                 <h1 className="text-center text-2xl mb-5">Wedding</h1>
                 <Carousel slide={false}>
                     <img src="/images/wedding/kissing-wedding.jpg" className="h-full md:h-screen object-cover md:object-contain" />
@@ -41,7 +41,7 @@ function Photoshoots () {
                 </Carousel>
             </div>
 
-            <div className="h-96 md:w-1/2 w-5/6 mx-auto mt-10 mb-20">
+            <div className="h-96 md:w-1/2 w-5/6 mx-auto mt-10 mb-20 text-white">
                 <h1 className="text-center text-2xl mt-40 mb-5">Maternity</h1>
                 <Carousel slide={false}>
                 <img src="/images/maternity/maternity-ring.jpg"  className="h-full md:h-fit object-cover md:object-contain"/>
