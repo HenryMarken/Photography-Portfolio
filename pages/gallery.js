@@ -1,5 +1,4 @@
-import {Carousel, Navbar} from 'flowbite-react'
-import Link from 'next/link'
+import Navigation from '../components/Navigation'
 
 function Gallery () {
     return (
@@ -9,20 +8,7 @@ function Gallery () {
                 <div className="absolute  top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
                     <h1 className="md:text-6xl text-4xl md:tracking-widest tracking-wide mt-10 text-white">GALLERY</h1>
                 </div>
-                <Navbar fluid={true} className="w-full rounded-none absolute bg-opacity-0 top-0 mt-5">
-                <Navbar.Brand >
-                    <img  src="logo.png" className="mr-3 h-6 sm:h-9" alt="HM Logo"/>
-                    <span className="self-center whitespace-nowrap md:text-xl text-whit font-roboto text-white"> Henry Marken </span>
-                </Navbar.Brand>
-                <Navbar.Toggle />
-                <Navbar.Collapse>
-                    <Link href="/" className="md:text-2xl text-white font-extralight font-roboto transition ease-in-out delay-150  hover:-translate-y-1 md:hover:scale-110 duration-150"> Home </Link>
-                    <Link href="/gallery" className="md:text-2xl text-white underline font-extralight font-roboto"> Gallery </Link>
-                    <Link href="/photoshoots" className="md:text-2xl text-white font-extralight font-roboto transition ease-in-out delay-150  hover:-translate-y-1 md:hover:scale-110 duration-150"> Photoshoots </Link>
-                    <Link href="/about" className="md:text-2xl text-white font-extralight font-roboto transition ease-in-out delay-150  hover:-translate-y-1 md:hover:scale-110 duration-150"> About </Link>
-                    <Link href="/contact" className="md:text-2xl text-white font-extralight font-roboto transition ease-in-out delay-150  hover:-translate-y-1 md:hover:scale-110 duration-150"> Contact </Link>
-                </Navbar.Collapse>
-                </Navbar>
+                <Navigation/>
             </div>
 
             <div className="md:grid grid-flow-row auto-rows-max grid-cols-3 gap-6 my-10 mx-10">
@@ -41,7 +27,6 @@ function Gallery () {
                 <img src="/images/julia-flower.jpg" className="object-fill my-10 md:my-auto"/>
                 <img src="/images/towers-cold.jpg" className="object-fill my-10 md:my-auto"/>
                 <img src="/images/whytecliff-girls.jpg" className="object-fil my-10l md:my-auto"/>
-               
             </div>
         </main>
     )

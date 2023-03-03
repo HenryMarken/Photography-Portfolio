@@ -1,8 +1,5 @@
-import {Navbar} from 'flowbite-react'
-import Link from 'next/link'
-import {Progress} from "flowbite-react"
-import {Alert} from "flowbite-react"
 import { useForm, ValidationError } from '@formspree/react';
+import Navigation from '../components/Navigation'
 
 function Contact () {
     const [state, handleSubmit] = useForm("mzbqzwdy"); 
@@ -20,20 +17,7 @@ function Contact () {
                 <div className="absolute  top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
                     <h1 className="md:text-6xl text-4xl md:tracking-widest tracking-wide mt-10 md:m-0 text-white">CONTACT</h1>
                 </div>
-                <Navbar fluid={true} className="w-full rounded-none absolute bg-opacity-0 top-0 mt-5">
-                <Navbar.Brand >
-                    <img  src="logo.png" className="mr-3 h-6 sm:h-9" alt="HM Logo"/>
-                    <span className="self-center whitespace-nowrap text-xl text-white"> Henry Marken </span>
-                </Navbar.Brand>
-                <Navbar.Toggle />
-                <Navbar.Collapse>
-                    <Link href="/" className="md:text-2xl text-white font-extralight font-roboto transition ease-in-out delay-150  hover:-translate-y-1 md:hover:scale-110 duration-150"> Home </Link>
-                    <Link href="/gallery" className="md:text-2xl text-white font-extralight font-roboto transition ease-in-out delay-150  hover:-translate-y-1 md:hover:scale-110 duration-150"> Gallery </Link>
-                    <Link href="/photoshoots" className="md:text-2xl text-white font-extralight font-roboto transition ease-in-out delay-150  hover:-translate-y-1 md:hover:scale-110 duration-150"> Photoshoots </Link>
-                    <Link href="/about" className="md:text-2xl text-white font-extralight font-roboto transition ease-in-out delay-150  hover:-translate-y-1 md:hover:scale-110 duration-150"> About </Link>
-                    <Link href="/contact" className="md:text-2xl text-white underline font-extralight font-roboto"> Contact </Link>
-                </Navbar.Collapse>
-                </Navbar>
+                <Navigation/>
             </div>
 
 

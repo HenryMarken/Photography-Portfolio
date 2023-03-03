@@ -1,5 +1,7 @@
-import {Carousel, Navbar} from 'flowbite-react'
-import Link from 'next/link'
+import {Carousel} from 'flowbite-react'
+
+
+import Navigation from '../components/Navigation'
 
 function Photoshoots () {
     return (
@@ -9,20 +11,7 @@ function Photoshoots () {
                 <div className="absolute  top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
                     <h1 className="md:text-6xl text-4xl md:tracking-widest tracking-wide mt-10 md:m-0 text-white">PHOTOSHOOTS</h1>
                 </div>
-                <Navbar fluid={true} className="w-full rounded-none absolute bg-opacity-0 top-0 mt-5">
-                <Navbar.Brand >
-                    <img  src="logo.png" className="mr-3 h-6 sm:h-9" alt="HM Logo"/>
-                    <span className="self-center whitespace-nowrap text-xl text-white"> Henry Marken </span>
-                </Navbar.Brand>
-                <Navbar.Toggle />
-                <Navbar.Collapse>
-                    <Link href="/" className="md:text-2xl text-white font-extralight font-roboto transition ease-in-out delay-150  hover:-translate-y-1 md:hover:scale-110 duration-150"> Home </Link>
-                    <Link href="/gallery" className="md:text-2xl text-white font-extralight font-roboto transition ease-in-out delay-150  hover:-translate-y-1 md:hover:scale-110 duration-150"> Gallery </Link>
-                    <Link href="/photoshoots" className="md:text-2xl text-white underline font-extralight font-roboto"> Photoshoots </Link>
-                    <Link href="/about" className="md:text-2xl text-white font-extralight font-roboto transition ease-in-out delay-150  hover:-translate-y-1 md:hover:scale-110 duration-150"> About </Link>
-                    <Link href="/contact" className="md:text-2xl text-white font-extralight font-roboto transition ease-in-out delay-150  hover:-translate-y-1 md:hover:scale-110 duration-150"> Contact </Link>
-                </Navbar.Collapse>
-                </Navbar>
+                <Navigation/>
             </div>
 
 
@@ -35,9 +24,6 @@ function Photoshoots () {
                     <img src="/images/wedding/portrait.jpg" className="h-full md:h-screen object-cover md:object-contain " />
                     <img src="/images/wedding/dsc09336.jpg" className="h-full md:h-screen object-cover md:object-contain" />
                     <img src="/images/wedding/dsc09230-2.jpg" className="h-full md:h-screen object-cover md:object-contain " />
-                    
-                    
-                    
                 </Carousel>
             </div>
 
