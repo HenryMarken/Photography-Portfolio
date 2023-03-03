@@ -5,8 +5,6 @@ import {Carousel, Navbar} from 'flowbite-react'
 import Link from 'next/link'
 
 import Navigation from '../components/Navigation'
- 
-
 
 export default function Home() {
  
@@ -22,12 +20,12 @@ export default function Home() {
         
         <div className="h-screen w-full">
           <Carousel slide={false}>
-            <img src="/images/edmonton-fall-cropped.jpg" className="h-screen object-cover"/>
-            <img src="/images/sydney-eyes.jpg" className="h-screen object-cover"/>
-            <img src="/images/fall-path-cropped.jpg" className="h-screen object-cover"  />
-            <img src="/images/vancouver-night-cropped.jpg" className="h-screen object-cover" />
-            <img src="/images/orange-sunset-cropped.jpg" className="h-screen object-cover" />
-            <img src="/images/vancouver-flower-cropped.jpg" className="h-screen object-cover" />
+            <Image src="/images/edmonton-fall-cropped.jpg" width={3200} height={1800} className="h-screen object-cover"/>
+            <Image src="/images/sydney-eyes.jpg" width={3200} height={1800} className="h-screen object-cover"/>
+            <Image src="/images/fall-path-cropped.jpg" width={3200} height={1800} className="h-screen object-cover"  />
+            <Image src="/images/vancouver-night-cropped.jpg" width={3200} height={1800} className="h-screen object-cover" />
+            <Image src="/images/orange-sunset-cropped.jpg" width={3200} height={1800} className="h-screen object-cover" />
+            <Image src="/images/vancouver-flower-cropped.jpg" width={3200} height={1800}className="h-screen object-cover" />
           </Carousel>
         </div>
 
@@ -47,13 +45,6 @@ export default function Home() {
               <Link href="/contact" className="text-center h-screen md:text-6xl text-4xl grid place-content-center md:float-right md:mr-20 md:font-semibold tracking-widest transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-150">CONTACT</Link>
           </div>
         </div>
-    
-
-        
-
-
-
-
       </main>
     </>
   )

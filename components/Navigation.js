@@ -2,6 +2,7 @@ import React from "react";
 import {Navbar} from 'flowbite-react'
 import Link from 'next/link'
 
+
 const Navigation = () => {
     const styling = "md:text-2xl text-white font-extralight font-roboto transition ease-in-out delay-150  hover:-translate-y-1 md:hover:scale-110 duration-150"
     return (

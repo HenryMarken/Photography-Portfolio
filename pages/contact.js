@@ -1,5 +1,6 @@
 import { useForm, ValidationError } from '@formspree/react';
 import Navigation from '../components/Navigation'
+import Image from 'next/image'
 
 function Contact () {
     const [state, handleSubmit] = useForm("mzbqzwdy"); 
@@ -13,7 +14,7 @@ function Contact () {
     return (
         <main className="bg-black">
             <div className="h-fit w-full relative">
-                <img src="/images/contact-page-cropped.jpg"/>
+                <Image src="/images/contact-page-cropped.jpg" width={3200} height={1800}/>
                 <div className="absolute  top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
                     <h1 className="md:text-6xl text-4xl md:tracking-widest tracking-wide mt-10 md:m-0 text-white">CONTACT</h1>
                 </div>
